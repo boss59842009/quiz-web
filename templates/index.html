@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обери вікторину</title>
+</head>
+<body>
+    <h1>Обери собі вікторину</h1>
+    {% for id, title, description in quizes_list %}
+        <h3>{{ id }}. {{ title }}</h3>
+        <p>{{ description }}</p>
+    {% endfor %}
+</body>
+</html>
